@@ -60,7 +60,7 @@ body {
     height:54px;
   }
   .photos .img {
-    width:50vw;
+    width:calc(50vw - 8.5px); /* windows scroll bars */
     height:calc(50vh - 27px);
     float:left;
   }
