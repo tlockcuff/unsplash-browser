@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if ('serviceWorker' in navigator) { navigator.serviceWorker.register('./sw.js'); }
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h4 class="text-center mt-1" id="resultsText">Today's Favorites</h3>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search Photos">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photos" id="all-images"></div>
+  <div class="clearfix"></div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
